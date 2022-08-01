@@ -17,21 +17,24 @@
         <p>Click on your chosen answer to play!</p>
     </header> 
     <section>
-        <div id="question-box">
-            <p id="question" >Which actress played Galadriel in Lord of the Rings?</p>
-            <div id="button-box">
-                <form>
-                    <label for="answer-one">Kate Blanchett</label>
-                    <input type="radio" id="answer-one" value="Kate Blanchett">
-                    <label for="answer-two">Sharon Stone</label>
-                    <input type="radio" id="answer-two">
-                    <br>
-                    <input type="submit" value="Submit">
-                </form>
+        <div id="flexbox">
+            <div id="question-box">
+                <br><br>
+                <p id="question" >Which actress played Galadriel in Lord of the Rings?</p>
+                <div id="button-box">
+                    <form>
+                        <label for="answer-one">Kate Blanchett</label>
+                        <input type="radio" id="answer-one" value="Kate Blanchett">
+                        <label for="answer-two">Sharon Stone</label>
+                        <input type="radio" id="answer-two">
+                        <br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="score">
         <h2>Score</h2>
         <p>Correct Answers: <span id="score">0</span></p>
         <p>Incorrect Answers: <span id="incorrect">0</span></p>

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+body{
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+header{
+    text-align: center;
+    font-size: 140%;
+}
+
+#flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/images/background-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#question-box{
+    height: 300px;
+    background-color: grey;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 140%;
+}
+
+#score{
+    text-align: center;
+    font-size: 140%;
+}
