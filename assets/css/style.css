@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Mouse Memoirs', sans-serif;
+    background-color: #f7ecc3;
 }
 
 header{
@@ -13,15 +14,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(assets/images/background-image.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 #question-box{
     height: 300px;
-    background-color: grey;
+    background-color: #f5f9e3;
     width: 300px;
     border: 2px solid black;
     border-radius: 2px;
