@@ -31,3 +31,9 @@ header{
     text-align: center;
     font-size: 140%;
 }
+
+.buttons{
+    height: 30px;
+    background-color: #f7ecc3;
+    border-radius: 2px;
+}
