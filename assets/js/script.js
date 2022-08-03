@@ -34,13 +34,20 @@ const questionArray = [
 
 window.addEventListener('DOMContentLoaded', (event) =>{
 
-    console.log(questionArray[2]);
+    const buttons = document.getElementsByClassName('buttons');
+    const question = document.getElementById('question');
+
+    loadQuestion(1);
+
+
+    function loadQuestion(index){
+
+        question.innerHTML = questionArray[index].question;
+        buttons[0].innerHTML = questionArray[index].option1;
+        buttons[1].innerHTML = questionArray[index].option2;
     
-
-
-
-
-
-
+    }
 
 })
+
+
