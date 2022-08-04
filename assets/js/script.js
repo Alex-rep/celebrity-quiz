@@ -41,11 +41,10 @@ const questionArray = [
 //main game loop starts after DOM is loaded
 window.addEventListener('DOMContentLoaded', (event) =>{
 
-    //load the buttons and question paragraph into JS variables
+    //load the buttons, question paragraph and score area into JS variables
     const buttons = Array.from(document.getElementsByClassName('buttons'));
     const question = document.getElementById('question');
-    const correct = document.getElementById('correct');
-    const incorrect = document.getElementById('incorrect');
+    //index counter for the questions array
     let que_index = 0;
    
     loadQuestion(que_index);
@@ -56,7 +55,10 @@ window.addEventListener('DOMContentLoaded', (event) =>{
         });
     }
 
-
+    /**
+     * Obtains the inner text of the button that has been clicked and evaluates the 
+     * correct answer. 
+     */
     function nextQuestion(event){
         
         btn_answ = event.target.innerText;
