@@ -32,7 +32,6 @@ const questionArray = [
     },
     {
         question: "Congrats, you completed the quiz!",
-        answer: "end",
         option1: "Restart",
         option2: "Restart"
     }
