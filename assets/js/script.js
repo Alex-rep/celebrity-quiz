@@ -60,21 +60,24 @@ window.addEventListener('DOMContentLoaded', (event) =>{
         
         btn_answ = event.target.innerText;
 
-        if(que_index === questionArray.length - 1){
-            
-            document.getElementById('question-holder').style.display = "none";
-            document.getElementById('restart-box').style.display = "block";
-
-        }else if(btn_answ === questionArray[que_index].answer){
+        if(btn_answ === questionArray[que_index].answer){
 
             let score = parseInt(document.getElementById('correct').innerText);
             document.getElementById('correct').innerText = ++score;
-            loadQuestion(++que_index);
         
         }else{
 
             let unScore = parseInt(document.getElementById('incorrect').innerText);
             document.getElementById('incorrect').innerText = ++unScore;
+
+        }
+        if(que_index === questionArray.length - 1){
+            
+            document.getElementById('question-holder').style.display = "none";
+            document.getElementById('restart-box').style.display = "block";
+
+        }
+        else{
             loadQuestion(++que_index);
         }
     }
