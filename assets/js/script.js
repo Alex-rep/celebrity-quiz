@@ -43,6 +43,7 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     //load the buttons, question paragraph and score area into JS variables
     const buttons = Array.from(document.getElementsByClassName('buttons'));
     const question = document.getElementById('question');
+    const restartButton = document.getElementById('restart');
     //index counter for the questions array
     let que_index = 0;
    
@@ -94,6 +95,20 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     
     }
 
+    /**
+     * Resets question counter, displays the first question again and shows the question area and buttons
+     */
+    function restartGame(){
+        
+        que_index = 0;
+        document.getElementById('correct').innerText = '0';
+        document.getElementById('incorrect').innerText = '0';
+        
+        loadQuestion(que_index);
+        document.getElementById('question-holder').style.display = "block";
+        document.getElementById('restart-box').style.display = "none";
+
+    }
 });
 
 
