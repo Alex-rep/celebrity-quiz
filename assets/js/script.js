@@ -29,11 +29,6 @@ const questionArray = [
         answer: "Russell Crowe",
         option1: "Russell Crowe",
         option2: "Ben Affleck"
-    },
-    {
-        question: "Congrats, you completed the quiz!",
-        option1: "Restart",
-        option2: "Restart"
     }
 ]
 
