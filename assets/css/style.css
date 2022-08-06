@@ -32,8 +32,12 @@ header{
     font-size: 140%;
 }
 
-.buttons{
+.buttons, .restart{
     height: 30px;
     background-color: #f7ecc3;
     border-radius: 2px;
+}
+
+#restart-box{
+    display: none;
 }
