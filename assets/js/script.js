@@ -55,6 +55,8 @@ window.addEventListener('DOMContentLoaded', (event) =>{
         });
     }
 
+    restartButton.addEventListener('click', restartGame);
+
     /**
      * Obtains the inner text of the button that has been clicked and evaluates the 
      * correct answer. 
@@ -63,12 +65,10 @@ window.addEventListener('DOMContentLoaded', (event) =>{
         
         btn_answ = event.target.innerText;
 
-        if(btn_answ === 'Restart'){
+        if(que_index === questionArray.length - 1){
             
-            que_index = 0;
-            document.getElementById('correct').innerText = '0';
-            document.getElementById('incorrect').innerText = '0';
-            loadQuestion(que_index);
+            document.getElementById('question-holder').style.display = "none";
+            document.getElementById('restart-box').style.display = "block";
 
         }else if(btn_answ === questionArray[que_index].answer){
 
