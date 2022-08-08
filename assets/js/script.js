@@ -67,8 +67,8 @@ window.addEventListener('DOMContentLoaded', (event) =>{
         
         }else{
 
-            let unScore = parseInt(document.getElementById('incorrect').innerText);
-            document.getElementById('incorrect').innerText = ++unScore;
+            let incorrect = parseInt(document.getElementById('incorrect').innerText);
+            document.getElementById('incorrect').innerText = ++incorrect;
 
         }
         if(que_index === questionArray.length - 1){
